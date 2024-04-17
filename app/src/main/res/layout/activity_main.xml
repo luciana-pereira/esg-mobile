@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F7EA"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonIncreaseTextSize"
+            style="@style/RoundedButton"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#65B269"
+            android:contentDescription="@string/button_increase_text_size"
+            android:text="@string/b"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewLogo"
+            app:layout_constraintEnd_toStartOf="@+id/buttonDecreaseTextSize"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonDecreaseTextSize"
+            style="@style/RoundedButton"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/button_decrease_text_size"
+            android:text="@string/a"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="402dp"
+            android:layout_height="355dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="60dp"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/esg_logo"
+            app:layout_constraintBottom_toTopOf="@+id/emailLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:importantForAccessibility="yes"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+            tools:ignore="VisualLintTextFieldSize,DuplicateClickableBoundsCheck" />
+
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:importantForAccessibility="yes"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailLogin"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#FF65B269"
+            android:contentDescription="@string/login_button_description"
+            android:text="@string/login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#3E2723"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordLogin"
+            tools:ignore="VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/linkRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:contentDescription="@string/register_link_description"
+            android:focusable="true"
+            android:minHeight="48dp"
+            android:text="@string/link_register"
+            android:textAlignment="center"
+            android:textColor="#3E2723"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "876470141296",
+    "project_id": "esg-game",
+    "storage_bucket": "esg-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876470141296:android:9558d073d508af4afe8fb5",
+        "android_client_info": {
+          "package_name": "br.com.fiap.esg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgpIbByJJ2Lrlhhm24lahL24Zw6-1-A_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
